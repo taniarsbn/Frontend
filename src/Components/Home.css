@@ -1,0 +1,83 @@
+/* Home.css */
+.bg-lightGray {
+    background-color: #f9f9f9; /* Warna latar belakang abu-abu muda */
+  }
+  
+  .container {
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Pusatkan konten */
+    padding: 0 1.5rem; /* Padding horizontal */
+  }
+  
+  .text-center {
+    text-align: center; /* Pusatkan teks */
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem; /* Ukuran font untuk judul utama */
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem; /* Ukuran font untuk subjudul */
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Ukuran font untuk teks deskriptif */
+  }
+  
+  .font-bold {
+    font-weight: bold; /* Berat font tebal */
+  }
+  
+  .font-semibold {
+    font-weight: 600; /* Berat font agak tebal */
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem; /* Jarak bawah */
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem; /* Jarak bawah lebih besar */
+  }
+  
+  .flex {
+    display: flex; /* Flexbox layout */
+  }
+  
+  .flex-col {
+    flex-direction: column; /* Flex arah kolom */
+  }
+  
+  .flex-row {
+    flex-direction: row; /* Flex arah baris */
+  }
+  
+  .gap-8 {
+    gap: 2rem; /* Jarak antar elemen dalam flex container */
+  }
+  
+  .bg-white {
+    background-color: #ffffff; /* Latar belakang putih untuk card */
+  }
+  
+  .p-6 {
+    padding: 1.5rem; /* Padding di dalam card */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem; /* Radius sudut card */
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan card */
+  }
+  
+  .w-12 {
+    width: 3rem; /* Lebar gambar */
+  }
+  
+  .h-12 {
+    height: 3rem; /* Tinggi gambar */
+  }
+  

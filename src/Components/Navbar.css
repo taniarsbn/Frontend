@@ -1,0 +1,26 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; /* Padding horizontal */
+    height: 5rem; /* Tinggi navbar sesuai dengan ukuran logo yang lebih besar */
+    background-color: rgba(29, 78, 216, 0.75); /* Background biru dengan transparansi */
+    box-sizing: border-box; /* Agar padding dan border tidak mempengaruhi lebar elemen */
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+  }
+  
+  .logo {
+    width: 4rem; /* Ukuran logo yang lebih besar */
+    height: auto; /* Pertahankan rasio aspek gambar */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem; /* Jarak antar link navigasi */
+  }
+  
