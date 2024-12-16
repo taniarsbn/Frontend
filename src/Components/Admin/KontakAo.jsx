@@ -11,11 +11,7 @@ const KontakAo = () => {
         >
          Chat AO 
         </Link>
-        <Link to={"/ajukan-rekstruktrurisasi"}
-          className="btn-add hidden sm:block"
-        >
-         Ajukan Rekstruktrurisasi
-        </Link>
+       
       </div>
     </div>
   );

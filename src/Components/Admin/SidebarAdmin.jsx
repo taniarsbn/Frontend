@@ -7,6 +7,8 @@ import { FaTimes } from "react-icons/fa";
 const SidebarAdmin = ({ tutupSidebar }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const { user } = useSelector((state) => state.auth);
+  console.log(user, "data");
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -36,7 +38,7 @@ const SidebarAdmin = ({ tutupSidebar }) => {
   const logout = () => {
     dispatch(LogOut());
     dispatch(reset());
-    navigate("/masuk");
+    navigate("/");
   };
 
   const getNavLinkClass = ({ isActive }) =>
@@ -53,9 +55,9 @@ const SidebarAdmin = ({ tutupSidebar }) => {
             {user && (
               <div className="">
                 <h1 className="text-xl font-bold text-end sm:text-left">
-                  {user.name}
+                  {user.username}
                 </h1>
-                <h1 className="text-lg text-end sm:text-left">{user.role}</h1>
+                <h1 className="text-lg text-end sm:text-left">{user?.role}</h1>
               </div>
             )}
           </div>
@@ -97,6 +99,12 @@ const SidebarAdmin = ({ tutupSidebar }) => {
                 <NavLink to="/deposito/simulasi" className={getNavLinkClass}>
                   Simulasi Deposito
                 </NavLink>
+                <NavLink to="/daftar-deposito" className={getNavLinkClass}>
+                  Daftar Deposito
+                </NavLink>
+                <NavLink to="/tabel-deposito" className={getNavLinkClass}>
+                  Tabel Deposito
+                </NavLink>
               </div>
             )}
           </div>
@@ -129,6 +137,15 @@ const SidebarAdmin = ({ tutupSidebar }) => {
               <div className="pl-6 transition-all duration-500 ease-out">
                 <NavLink to="/kredit/simulasi" className={getNavLinkClass}>
                   Simulasi Kredit
+                </NavLink>
+                <NavLink to="/ajukan-rekstruktrurisasi" className={getNavLinkClass}>
+                  Ajukan Rekstruktrurisasi
+                </NavLink>
+                <NavLink to="/ajukan-topup" className={getNavLinkClass}>
+                  Ajukan Top-Up
+                </NavLink>
+                <NavLink to="/daftar-kredit" className={getNavLinkClass}>
+                  Daftar Kredit
                 </NavLink>
               </div>
             )}
